@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrintPro - Online Printing Services</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h1>PrintPro</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#products">Products</a>
+                <a href="#tracking">Track Order</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-icons">
+                <a href="#search"><i class="fas fa-search"></i></a>
+                <a href="#cart"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+                <a href="login.html" class="login-btn"><i class="fas fa-user"></i> Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Professional Printing Services</h1>
+            <p>High-quality printing solutions for all your needs</p>
+            <a href="#services" class="cta-button">Explore Services</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-file-alt"></i>
+                <h3>Document Printing</h3>
+                <p>Professional document printing with high-quality results</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-image"></i>
+                <h3>Photo Printing</h3>
+                <p>Premium photo printing in various sizes and formats</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-tshirt"></i>
+                <h3>Custom Merchandise</h3>
+                <p>Personalized t-shirts, mugs, and promotional items</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-banner"></i>
+                <h3>Banners & Signs</h3>
+                <p>Large format printing for banners and signs</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <h2>Popular Products</h2>
+        <div class="product-filters">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="documents">Documents</button>
+            <button class="filter-btn" data-category="photos">Photos</button>
+            <button class="filter-btn" data-category="merchandise">Merchandise</button>
+        </div>
+        <div class="products-grid">
+            <!-- Product cards will be dynamically added here -->
+        </div>
+    </section>
+
+    <!-- Order Tracking Section -->
+    <section class="tracking" id="tracking">
+        <h2>Track Your Order</h2>
+        <div class="tracking-form">
+            <input type="text" placeholder="Enter your order ID" id="orderId">
+            <button class="track-btn">Track Order</button>
+        </div>
+        <div class="tracking-result" id="trackingResult">
+            <!-- Tracking results will be displayed here -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p><i class="fas fa-phone"></i> +63 2 1234 5678</p>
+                <p><i class="fas fa-envelope"></i> info@printpro.ph</p>
+                <p><i class="fas fa-location-dot"></i> 123 Print Street, Makati City, Philippines</p>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>PrintPro is your one-stop solution for all printing needs. We provide high-quality printing services with fast turnaround times.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#tracking">Track Order</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 PrintPro. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,191 @@
+/* Login Container */
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    padding: 2rem;
+}
+
+.login-box {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-box .logo {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.login-box .logo h1 {
+    color: #2c3e50;
+    font-size: 2rem;
+}
+
+/* Login Tabs */
+.login-tabs {
+    display: flex;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #eee;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 1rem;
+    border: none;
+    background: none;
+    font-size: 1rem;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+    color: #3498db;
+    border-bottom: 2px solid #3498db;
+    margin-bottom: -2px;
+}
+
+/* Auth Forms */
+.auth-form {
+    display: none;
+}
+
+.auth-form.active {
+    display: block;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.remember-me input[type="checkbox"] {
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+.forgot-password {
+    color: #3498db;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.auth-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Social Login */
+.social-login {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.social-login p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-btn {
+    flex: 1;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.social-btn.google {
+    color: #db4437;
+}
+
+.social-btn.facebook {
+    color: #4267B2;
+}
+
+.social-btn:hover {
+    background-color: #f5f5f5;
+}
+
+/* Help Text */
+.help-text {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+/* Error Message */
+.error-message {
+    color: #e74c3c;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+/* Success Message */
+.success-message {
+    color: #2ecc71;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .login-box {
+        padding: 1.5rem;
+    }
+
+    .social-buttons {
+        flex-direction: column;
+    }
+} 
